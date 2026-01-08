@@ -1,0 +1,302 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("./gif/fondo.gif") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor principal */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(3px);
+}
+
+/* Caja de login */
+.login-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  width: 320px;
+  text-align: center;
+  position: relative;
+  animation: glow 2s ease-in-out;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 0 rgba(255,255,255,0); }
+  100% { box-shadow: 0 0 20px rgba(255,255,255,0.4); }
+}
+
+.title {
+  color: white;
+  font-family: 'Cabin', sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(30,30,30,0.8);
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Botón */
+.login-btn {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+/* Mensaje de error */
+#error-message {
+  margin-top: 15px;
+  color: #ff4d4d;
+  font-size: 14px;
+}
+/* ===== NAVBAR ===== */
+.navbar {
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  color: #00c6ff;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+}
+
+.page-title {
+  font-family: 'Cabin', sans-serif;
+  font-size: 32px;
+}
+
+.subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* ===== MODAL ===== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  background: rgba(0,0,0,0.85);
+  color: white;
+  border-radius: 20px;
+  margin: 15% auto;
+  padding: 30px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.modal-title {
+  font-family: 'Cabin', sans-serif;
+  margin-bottom: 10px;
+}
+
+.close {
+  color: #aaa;
+  font-size: 24px;
+  float: right;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover {
+  color: white;
+}
+/* ===== CALENDARIO ===== */
+.calendario {
+  margin-top: 40px;
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+}
+
+.calendar-title {
+  font-family: 'Cabin', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #00c6ff;
+}
+
+.meses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); /* antes era 120px */
+  gap: 10px;
+  max-width: 600px; /* más angosto */
+  margin: 0 auto;
+}
+
+.mes {
+  background: rgba(0,0,0,0.6);
+  border: 2px solid #00c6ff;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mes:hover {
+  background: #00c6ff;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Oculto por defecto */
+.hidden {
+  display: none;
+}
+/* ===== GRID DE DÍAS ===== */
+.dias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 10px;
+  margin-top: 25px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 0.5s ease;
+}
+
+.dia {
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dia:hover {
+  background: #00c6ff;
+  color: black;
+  transform: scale(1.05);
+}
+/* ===== MODAL CARTA ===== */
+.carta-box {
+  max-width: 700px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.carta-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.preview {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+#carta-info {
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  color: #00c6ff;
+}
+
+.carta-body {
+  text-align: center;
+}
+
+.carta-img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: contain;
+}

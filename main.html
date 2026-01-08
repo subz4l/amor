@@ -1,0 +1,77 @@
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>principal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Cabin:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <ul>
+      <li><button id="btn-calendario" class="nav-btn">calendario</button></li>
+      <li><button id="btn-home" class="nav-btn"><img src="./iconos/casa.png" alt="Casa" class="icon" /></button></li>
+      <li><button id="btn-creditos" class="nav-btn">créditos</button></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="main-content">
+    <h1 class="page-title">amolmio</h1>
+    <p class="subtitle">selecciona una opción del menú.</p>
+  </main>
+
+  <!-- Modal Créditos -->
+  <div id="modal-creditos" class="modal">
+    <div class="modal-content">
+      <span id="close-creditos" class="close">&times;</span>
+      <h2 class="modal-title">Créditos</h2>
+      <p>4 my soulmate 💘</p>
+    </div>
+  </div>
+
+  <!-- Modal Carta -->
+<div id="modal-carta" class="modal">
+  <div class="modal-content carta-box">
+    <span id="close-carta" class="close">&times;</span>
+    <div class="carta-header">
+      <img id="preview-img" src="" alt="Preview" class="preview">
+      <h3 id="carta-info"></h3>
+    </div>
+    <div class="carta-body">
+      <img id="carta-img" src="" alt="Carta" class="carta-img">
+    </div>
+  </div>
+</div>
+
+  <!-- Contenedor Calendario -->
+  <section id="calendario" class="calendario hidden">
+  <h2 class="calendar-title">calendario</h2>
+  <div class="meses-grid">
+    <button class="mes" data-mes="0">Enero</button>
+    <button class="mes" data-mes="1">Febrero</button>
+    <button class="mes" data-mes="2">Marzo</button>
+    <button class="mes" data-mes="3">Abril</button>
+    <button class="mes" data-mes="4">Mayo</button>
+    <button class="mes" data-mes="5">Junio</button>
+    <button class="mes" data-mes="6">Julio</button>
+    <button class="mes" data-mes="7">Agosto</button>
+    <button class="mes" data-mes="8">Septiembre</button>
+    <button class="mes" data-mes="9">Octubre</button>
+    <button class="mes" data-mes="10">Noviembre</button>
+    <button class="mes" data-mes="11">Diciembre</button>
+  </div>
+
+  <!-- Contenedor de días -->
+  <div id="dias-container" class="dias-grid hidden"></div>
+</section>
+
+</main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
