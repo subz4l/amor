@@ -208,7 +208,7 @@ body {
 .calendar-title {
   font-family: 'Cabin', sans-serif;
   font-size: 2rem;
-  color: #00c6ff;
+  color: #cbc6d1;
   margin-bottom: 30px;
 }
 
@@ -223,7 +223,7 @@ body {
 
 .mes {
   background: rgba(0, 0, 0, 0.6);
-  border: 2px solid #00c6ff;
+  border: 2px solid #5F5949;
   color: white;
   border-radius: 12px;
   padding: 12px;
@@ -234,10 +234,10 @@ body {
 }
 
 .mes:hover {
-  background: #00c6ff;
+  background: #e4a6e4;
   color: black;
   transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(0, 198, 255, 0.4);
+  box-shadow: 0 0 15px #b5a8ce;
 }
 
 .dias-grid {
@@ -291,8 +291,8 @@ body {
 
 .capsula:hover {
     transform: translateY(-10px);
-    border-color: rgba(0, 198, 255, 0.5);
-    box-shadow: 0 20px 40px rgba(0, 198, 255, 0.2);
+    border-color: #70473B;
+    box-shadow: 0 20px 40px #BD8D72;
 }
 
 .video-wrapper {
@@ -316,14 +316,14 @@ body {
 
 .capsula-info h3 {
     margin: 0 0 10px 0;
-    color: #00c6ff;
+    color: #e9d2e5;
     font-family: 'Cabin', sans-serif;
 }
 
 .capsula-info p {
     margin: 0;
     font-size: 14px;
-    color: #ddd;
+    color: #58445c;
     line-height: 1.6;
 }
 
@@ -351,21 +351,20 @@ body {
   padding: 25px;
   width: 85%;
   max-width: 450px;
-  border: 1px solid rgba(0, 198, 255, 0.3);
+  border: 1px solid #54332B;
   position: relative;
   animation: fadeIn 0.4s ease;
-  color: white;
+  color: #c8b3ad;
   text-align: center;
 }
 
 /* Forzamos que la foto pequeña sea siempre pequeña */
 .preview {
-  width: 80px !important;
-  height: 80px !important;
-  max-width: 80px;
-  max-height: 80px;
-  border-radius: 50%;
-  border: 2px solid #00c6ff;
+  width: 90px !important;
+  height: 90px !important;
+  max-width: 90px;
+  max-height: 90px;
+  border-radius: 15%;
   margin: 0 auto 15px !important;
   object-fit: cover;
   display: block;
@@ -374,7 +373,7 @@ body {
 #carta-info {
   display: block;
   margin: 10px 0;
-  color: #00c6ff;
+  color: #beb0ad;
   font-weight: bold;
   font-size: 1.1rem;
 }

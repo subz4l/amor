@@ -1,0 +1,48 @@
+16
+
+Login (Index.html)
+Inisio de Sesion con un solo tipo de acceso
+
+Nombre: mai
+Contraseña: stivymai12
+
+El inicio de sesion debe tener de background un gif que al colocarlo rellene todo el espacio de manera centralizada,
+las esquinas de el login deben ser redondeadas y debe brillar una esquina al entrar a la pagina, debe ser transparente y oscuro,
+el interior de los cuadrados donde se escribe la contraseña tambien debe ser oscuro y antes de escribir en donde va el nombre debe decir
+(mi amor eterno) y donde va la contraseña (contraseñaa), si no se ponen correctamente los caracteres debe aparecer un mensaje y no debe permitir el acceso.
+Esta debe ser la pagina en la cual aparezca al ingresar a la pagina ya sea atravez de links o como sea.
+
+Pagina Principal (main.html)
+
+Menu moderno en la parde superior
+1. Tres botones
+    - Calendario 
+      (Este boton debe desplegar 13 botones de enero a diciembre no muy grandes y faciles de ver,
+	deben ser transparentes al clickear o pulsar con el dedo cada boton debe desplegarse varios cuadrados ligeramente redondeados en las esquinas de hecho tan pequeños como los cudrados de un calendario y tan organizados como ellos como en un telefono, que cada cuadrado tenga
+	la cantidad de dias que tiene cada mes de este año 2025 cada cuadradito debe ser redondeado y debe contener una imagen de preview, fecha y un titulo pequeño arriba, al clickear o pulsar debe salir la carta1.png que se guardara en images/cartas y asi consecutivamente a todos los demas meses y cuadrados
+	la fecha debe ser desde el 2 de enero asi que enero restale los cuadrados para que quede bien la fecha y los cuadrados terminen en enero de 2026 en el ultimo boton, este boton solo tendra la carta final o las cartas para completar las 365.
+	Como cada cuadrado ya contiene una imagen de preview que se guarda en images/calendario y cada imagen tiene el nombre de img1.jpeg al img365.jpeg para cada cuadradito, al clickear debe salir la carta1.png hasta la carta365.png en un formato con esquinas ligeramente redondeadas y con la capacidad de poder deslizar para seguir leyendo la carta (imagen) ya sea con la rueda del mouse o con el dedo.
+	, cada carta al aparecer arriba de ella de manera centralizada debe aparecer la imagen de preview con la fecha y titulo de la carta pero mas visible para asi tener los detalles de la carta y usar bien la imagen.)
+
+   - Simbolo de casa* (sera un icon.png guardado en iconos/casa.png)
+	(Este boton de menu debe hacer regresar al login)
+
+   - Creditos 
+	(Abre un cuadrado redondeado moderno en formato 1.1 que dice: Hecho x Stiven 4 my soulmate)
+	
+	Esos serian los tres botones y cada cuadrado como las cartas debe contener una x minimalista moderna sin bordes para cerrarlos.
+
+	
+	Tipos de fonts.
+	
+	General: Poppins regular 400
+
+	Botones: Elige alguna moderna acorde.
+
+	Titulos: Cabin Bold 700
+
+	Fechas: Poppins
+
+	Creditos: Poppins
+
+
